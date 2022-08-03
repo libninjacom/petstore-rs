@@ -29,3 +29,5 @@ Official PetStore client, generated from the OpenAPI spec.
 # Contributing
 
 Contributions are welcome!
+
+*Library created with [Libninja.com](https://www.libninja.com)*
