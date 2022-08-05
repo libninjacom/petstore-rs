@@ -1,3 +1,4 @@
+use petstore::PetStoreClient;
 
 fn main() {
     let client = PetStoreClient::new("http://petstore.swagger.io/v2");
