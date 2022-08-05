@@ -4,6 +4,7 @@
 #![allow(non_camel_case_types)]
 pub mod model;
 pub mod request_model;
+
 use crate::model::*;
 
 pub struct PetStoreClient {
