@@ -50,3 +50,9 @@ patch: test
 
 doc:
     cargo doc --no-deps --open
+
+test-full:
+    #!/usr/bin/env bash -euxo pipefail
+    for file in $(ls examples); do
+        cargo run --example "$(basename "$file" .rs)"
+    done

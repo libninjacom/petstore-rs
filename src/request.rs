@@ -1,6 +1,6 @@
 use serde_json::json;
 use crate::model::*;
-use crate::petstore_client;
+use crate::PetstoreClient;
 /**Create this with the associated client method.
 
 That method takes required values as arguments. Set optional values using builder methods on this struct.*/
@@ -39,7 +39,7 @@ impl<'a> CreatePetsRequest<'a> {
         let mut r = self.client.client.post("/pets");
         let res = r.send().await.unwrap().error_for_status();
         match res {
-            Ok(res) => res.json().await.map_err(|e| anyhow::anyhow!("{:?}", e)),
+            Ok(res) => Ok(()),
             Err(res) => {
                 let text = res.text().await.map_err(|e| anyhow::anyhow!("{:?}", e))?;
                 Err(anyhow::anyhow!("{:?}", text))

@@ -9,6 +9,9 @@ readme = "README.md"
 license = "MIT"
 repository = "https://github.com/libninjacom/petstore-rs"
 
+[workspace]
+members = []
+
 [dependencies]
 anyhow = "1.0.57"
 httpclient = "0.6.0"

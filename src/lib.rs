@@ -9,7 +9,13 @@ use crate::model::*;
 pub struct PetstoreClient {
     pub(crate) client: httpclient::Client,
 }
-impl PetstoreClient {}
+impl PetstoreClient {
+    pub fn from_env() -> Self {
+        let url = std::env::var("PETSTORE_BASE_URL")
+            .expect("Missing environment variable PETSTORE_BASE_URL");
+        Self::new(&url)
+    }
+}
 impl PetstoreClient {
     pub fn new(url: &str) -> Self {
         let client = httpclient::Client::new(Some(url.to_string()));
