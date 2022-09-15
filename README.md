@@ -22,9 +22,9 @@
 
 
 
-Official PetStore client, generated from the OpenAPI spec.
+Petstore client, generated from the OpenAPI spec.
 
-# [Documentation](https://docs.rs/petstore/latest/petstore)
+# [Documentation](https://docs.rs/petstore)
 
 # Contributing
 
