@@ -1,7 +1,7 @@
 [package]
 name = "petstore"
 edition = "2021"
-version = "8.0.0"
+version = "9.0.0"
 description = "Petstore client, generated from the OpenAPI spec."
 homepage = "https://github.com/libninjacom/petstore-rs"
 documentation = "https://docs.rs/petstore"
@@ -33,28 +33,4 @@ plugin = false
 proc-macro = false
 edition = "2021"
 crate-type = ["rlib"]
-required-features = []
-
-[[example]]
-path = "examples/create_pets.rs"
-name = "create_pets"
-plugin = false
-proc-macro = false
-edition = "2021"
-required-features = []
-
-[[example]]
-path = "examples/list_pets.rs"
-name = "list_pets"
-plugin = false
-proc-macro = false
-edition = "2021"
-required-features = []
-
-[[example]]
-path = "examples/show_pet_by_id.rs"
-name = "show_pet_by_id"
-plugin = false
-proc-macro = false
-edition = "2021"
 required-features = []
