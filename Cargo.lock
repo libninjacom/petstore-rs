@@ -394,7 +394,7 @@ dependencies = [
 
 [[package]]
 name = "petstore"
-version = "0.1.1"
+version = "6.0.0"
 dependencies = [
  "anyhow",
  "httpclient",
