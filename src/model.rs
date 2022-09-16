@@ -1,8 +1,11 @@
 use serde::{Serialize, Deserialize};
 #[derive(Debug, Serialize, Deserialize, Default)]
 pub struct Pet {
+    #[serde(rename = "id")]
     pub id: i64,
+    #[serde(rename = "name")]
     pub name: String,
+    #[serde(rename = "tag")]
     pub tag: Option<String>,
 }
 impl std::fmt::Display for Pet {
@@ -14,7 +17,9 @@ impl std::fmt::Display for Pet {
 pub struct Pets(pub Vec<Pet>);
 #[derive(Debug, Serialize, Deserialize, Default)]
 pub struct Error {
+    #[serde(rename = "code")]
     pub code: i64,
+    #[serde(rename = "message")]
     pub message: String,
 }
 impl std::fmt::Display for Error {
