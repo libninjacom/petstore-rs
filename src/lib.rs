@@ -2,6 +2,7 @@
 //!
 //! Library created with [`libninja`](https://www.libninja.com).
 #![allow(non_camel_case_types)]
+#![allow(unused)]
 pub mod model;
 pub mod request;
 use crate::model::*;
